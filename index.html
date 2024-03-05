@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
+    <title>Melody | Media downloader</title>
+    <script defer src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c4046a80c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="pattern-background">
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-logo"><img src="./assets/fulllogo.svg" alt="" /></div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/yuans-dev/melody-uwp/releases"
+                >Releases</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="nav-focus">
+          <button
+            class="default-button"
+            onclick="window.open('https://github.com/yuans-dev/melody-uwp')"
+          >
+            <i class="fa-brands fa-github-alt"></i>GitHub
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero-section-content">
+        <img
+          onclick="window.open('https://github.com/yuans-dev/melody-uwp')"
+          src="./assets/logo.png"
+          alt=""
+        />
+        <div class="text">
+          <h1>Sail the seven seas with style</h1>
+          <h3>Download music for free!</h3>
+        </div>
+
+        <div class="download">
+          <button
+            onclick="window.location.href='https://github.com/yuans-dev/melody-uwp/releases/latest/download/melody.zip'"
+            class="default-button accent-button"
+          >
+            <i class="fa-brands fa-windows"></i>Download for Windows 10/11
+          </button>
+          <button style="display: none" class="default-button accent-button">
+            <i class="fa-brands fa-android"></i>Download for Android
+          </button>
+        </div>
+        <button
+          class="default-button"
+          onclick="window.location.href='#installation'"
+        >
+          How to install
+        </button>
+      </div>
+    </section>
+
+    <section id="about" class="about-section padding-large">
+      <div class="about-section-content">
+        <div class="about-card">
+          <div class="text">
+            <span class="title">Download your favorite music and videos</span
+            ><span class="body"
+              >Melody allows you to download music and videos (or music videos,
+              even!) from YouTube in the highest possible quality.</span
+            >
+          </div>
+          <div class="graphic"><img src="./assets/demo1.png" alt="" /></div>
+        </div>
+        <div class="about-card">
+          <div class="text">
+            <span class="title">Fits right into your library</span
+            ><span class="body"
+              >If you download from Spotify, Melody automatically sets the
+              metadata and cover art for your .mp3.</span
+            >
+          </div>
+          <div class="graphic"><img src="./assets/demo2.png" alt="" /></div>
+        </div>
+        <div class="about-card">
+          <div class="text">
+            <span class="title">Discover more</span
+            ><span class="body"
+              >Find more music that you like using last.fm's API</span
+            >
+          </div>
+          <div class="graphic"><img src="./assets/demo3.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <section id="installation" class="installation-section padding-large">
+      <div class="installation-section-content">
+        <h1>Installation</h1>
+        <h4><span class="highlight">(For UWP release only)</span></h4>
+        <ol>
+          <li>
+            <span class="text"
+              >Download
+              <a
+                href="https://github.com/yuans-dev/melody-uwp/releases/latest/download/melody.zip"
+                ><span class="highlight">latest UWP release</span></a
+              >.</span
+            >
+            <div class="graphic">
+              <img src="./assets/uwp_install1.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <span class="text">Open <span class="highlight">.zip</span>.</span>
+            <div class="graphic">
+              <img src="./assets/uwp_install2.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <span class="text"
+              >Extract <span class="highlight">.zip</span>.</span
+            >
+            <div class="graphic">
+              <img src="./assets/uwp_install3.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <span class="text"
+              >Run <span class="highlight">Install.ps1</span> with
+              PowerShell.</span
+            >
+            <div class="graphic">
+              <img src="./assets/uwp_install4.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <span class="text">
+              If prompted to install certificate, continue. Otherwise, simply
+              respond "Yes" to all prompts.
+            </span>
+            <div class="graphic">
+              <img src="./assets/uwp_install7.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <span class="text">"Yes" to all prompts.</span>
+            <div class="graphic">
+              <img src="./assets/uwp_install8.png" alt="" />
+            </div>
+          </li>
+          <li>
+            <span class="text">Finish installation.</span>
+            <div class="graphic">
+              <img src="./assets/uwp_install9.png" alt="" />
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <footer>
+      <div class="project-details">
+        <img src="./assets/fulllogo.svg" alt="" />
+        <span>Melody is an open-source project</span>
+        <span>© 2024 yuans-dev </span>
+      </div>
+    </footer>
+  </body>
+</html>
